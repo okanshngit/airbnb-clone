@@ -7,7 +7,6 @@ import MediumCard from '../components/MediumCard.jsx';
 import SmallCard from '../components/SmallCard.jsx';
 
 export default function Home({ exploreData, cardData }) {
-  console.log(cardData);
   return (
     <div>
       <Head>
@@ -37,7 +36,7 @@ export default function Home({ exploreData, cardData }) {
 
         <section>
           <h2 className='text-3xl text-semibold py-8'>Live Anywhere</h2>
-          <div className='flex space-x-3 overflow-auto scrollbar-hide '>
+          <div className='flex space-x-3 overflow-auto  '>
             {cardData?.map(({ img, title }) => (
               <MediumCard key={img} img={img} title={title} />
             ))}
